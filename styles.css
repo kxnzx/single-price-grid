@@ -1,0 +1,252 @@
+/* GOOGLE FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+/* VARIABLES */
+:root {
+  /* primary colors */
+  --Cyan: hsl(179, 62%, 43%);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+  --Soft-Bright-Yellow: hsla(71, 73%, 54%, 0.8);
+  --Light-Cyan: hsl(179, 47%, 52%);
+
+  /* neutral colors */
+  --Light-Gray: hsl(204, 43%, 93%);
+  --Grayish-Blue: hsla(218, 22%, 67%, 0.7);
+  --white: hsla(0, 0%, 100%, 0.8);
+  --transparant-white: hsla(0, 0%, 100%, 0.5);
+  --bold-white: hsl(0, 0%, 100%);
+
+  /* font-family */
+  --ff-primary: "Karla", sans-serif;
+
+  /* font-weight */
+  --normal: 400;
+  --bold: 700;
+
+  /* font-size */
+  --fs-large: 1.875rem;
+  --fs-medium: 1.125rem;
+  --fs-small: 0.9375rem;
+
+  /* buttons */
+  --transition: all 200ms ease-in;
+  --border-radius: 0.5em;
+}
+
+/* RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* CENTER LAY-OUT */
+html {
+  display: table;
+  margin: auto;
+}
+
+body {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+main {
+  margin: 0 auto;
+  min-height: calc(100vh - 40px);
+}
+
+/****************************** BASE STYLES ****************************** /
+
+/* background-color */
+body {
+  background-color: var(--Light-Gray);
+
+  /* global font-styles */
+  font-family: var(--ff-primary);
+  font-size: var(--fs-small);
+  font-weight: var(--normal);
+  line-height: 1.6;
+}
+
+/* GLOBAL STYLES OF CONTENT */
+/*section.one .text {
+  max-width: 30ch;
+}*/
+
+section.one h2 {
+  color: var(--Cyan);
+  margin-bottom: 1.4375rem;
+}
+
+section.one h3 {
+  color: var(--Bright-Yellow);
+  margin-bottom: 1.4375rem;
+}
+
+section.one p {
+  color: var(--Grayish-Blue);
+  margin-bottom: 1.4375rem;
+}
+
+section.two {
+  display: flex;
+  flex-direction: column;
+}
+
+section.two h3,
+p {
+  color: var(--white);
+}
+
+section.two h3 {
+  margin-bottom: 1rem;
+}
+
+section.two p {
+  font-size: var(--fs-medium);
+  /*display: table;*/
+}
+
+section.two .price {
+  font-size: var(--fs-large);
+  font-weight: var(--bold);
+  color: var(--bold-white);
+}
+
+section.two .pm {
+  color: var(--transparant-white);
+  /*padding: 0.5em;
+  display: table-cell;
+  vertical-align: middle;*/
+}
+
+section.two .cta {
+  margin-bottom: 1.4375rem;
+}
+/* button-styles */
+section.two button {
+  background-color: var(--Bright-Yellow);
+  transition: var(--transition);
+  border-radius: var(--border-radius);
+  border-style: none;
+  font-family: inherit;
+  cursor: pointer;
+  display: inline-block;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  width: 100%;
+}
+
+section.two button:hover {
+  background-color: var(--Soft-Bright-Yellow);
+}
+
+section.two button .button-text {
+  padding: 1.2em 7em;
+  display: inline-block;
+  text-decoration: none;
+  color: var(--bold-white);
+  font-weight: var(--bold);
+  font-size: var(--fs-small);
+}
+/* end of button-styles */
+
+section.three h3 {
+  margin-bottom: 1.4375rem;
+}
+
+section.three h3,
+ul {
+  color: var(--white);
+  list-style-type: none;
+}
+
+section.three ul {
+  color: var(--transparant-white);
+}
+/* END OF GLOBAL STYLES OF CONTENT */
+
+/* GLOBAL STYLING OF SECTIONS/LAYOUT */
+section.one {
+  background-color: var(--white);
+  /*border-top-left-radius: 0.4em;
+  border-top-right-radius: 0.4em;*/
+}
+
+section.two {
+  background-color: var(--Cyan);
+  display: inline-block;
+  vertical-align: top;
+  height: auto;
+  width: 100%;
+}
+
+section.three {
+  background-color: var(--Light-Cyan);
+  display: inline-block;
+  vertical-align: top;
+  height: auto;
+  width: 100%;
+}
+
+section {
+  padding: 1.4375rem;
+}
+/* END GLOBAL STYLING OF SECTIONS/LAYOUT */
+
+/* STYLING FOOTER */
+.attribution {
+  color: var(--Grayish-Blue);
+  text-align: center;
+}
+
+.attribution .highlight {
+  color: var(--Cyan);
+}
+
+/* MOBILE FIRST */
+/* mobile styles min-width 320px (Mobile: 375px) */
+.container {
+  width: 75%; /* max-width */
+  margin: 50px auto;
+  box-shadow: 2px 3px 7px 0px rgba(0, 0, 0, 0.35);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/* MEDIA QUERIES */
+/* Everything greater than a mobile device and a tablet */
+@media screen and (min-width: 992px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 45%;
+
+    /* CENTER CONTAINER ON PAGE */
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .one .text {
+    max-width: 90%;
+  }
+
+  .bottom-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .bottom-container .two .three {
+    width: 50%;
+  }
+}
