@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- [See Solution](https://your-solution-url.com)
-- [Live Site](https://your-live-site-url.com)
+- [See Solution](https://www.frontendmentor.io/solutions/single-price-grid-with-flexbox-SY85ewaVE)
+- [Live Site](https://kxnzx.github.io/single-price-grid/)
 
 ## My process
 
