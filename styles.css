@@ -149,7 +149,7 @@ section.two button:hover {
 }
 
 section.two button .button-text {
-  padding: 1.2em 7em;
+  padding: 1.2em 5em;
   display: inline-block;
   text-decoration: none;
   color: var(--bold-white);

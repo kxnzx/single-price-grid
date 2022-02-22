@@ -1,4 +1,4 @@
-# Frontend Mentor - Single price grid component solution
+# Frontend Mentor - Single Price Grid Component Solution
 
 This is a solution to the [Single price grid component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
@@ -25,12 +25,18 @@ Users should be able to:
 
 ### Screenshot
 
+#### Screensize 1440px - Desktop
+
 ![Screenshot](images/ScreenshotGrid.png)
+
+#### Screensize 375px - Mobile
+
+<img src="images/Screenshot1.png" alt="Mobile" width="150px"><img src="images/Screenshot2.png" alt="Mobile" width="150px">
 
 ### Links
 
-- [See Solution](https://www.frontendmentor.io/solutions/single-price-grid-with-flexbox-SY85ewaVE)
-- [Live Site](https://kxnzx.github.io/single-price-grid/)
+- View my Solution on [Frontend Mentor](https://www.frontendmentor.io/solutions/single-price-grid-with-flexbox-SY85ewaVE)
+- View the Live Site [here](https://kxnzx.github.io/single-price-grid/)
 
 ## My process
 
@@ -93,7 +99,7 @@ These Properties are used together:
 
 ### Continued development
 
-Understanding of Grid.
+Understanding of CSS Grid and more.
 
 ## Author
 
